@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>All About Sidharth Vats</title>
+</head>
+
+<body onload="preloader()">
+  <div id="preloader-container">
+    <div class="spinner-grow large text-light" role="status" id="preloader">
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand " href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          fill="currentColor" class="bi bi-emoji-sunglasses" viewBox="0 0 16 16">
+          <path
+            d="M4.968 9.75a.5.5 0 1 0-.866.5A4.498 4.498 0 0 0 8 12.5a4.5 4.5 0 0 0 3.898-2.25.5.5 0 1 0-.866-.5A3.498 3.498 0 0 1 8 11.5a3.498 3.498 0 0 1-3.032-1.75zM7 5.116V5a1 1 0 0 0-1-1H3.28a1 1 0 0 0-.97 1.243l.311 1.242A2 2 0 0 0 4.561 8H5a2 2 0 0 0 1.994-1.839A2.99 2.99 0 0 1 8 6c.393 0 .74.064 1.006.161A2 2 0 0 0 11 8h.438a2 2 0 0 0 1.94-1.515l.311-1.242A1 1 0 0 0 12.72 4H10a1 1 0 0 0-1 1v.116A4.22 4.22 0 0 0 8 5c-.35 0-.69.04-1 .116z" />
+          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-1 0A7 7 0 1 0 1 8a7 7 0 0 0 14 0z" />
+        </svg></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="canon.html">Photography</a>
+          </li>
+          <li class="nav-item dropdown" id="drd">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Connect
+            </a>
+            <ul class="dropdown-menu shadow-lg" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" target="_blank" href="https://www.facebook.com/sidharth.vats.20/"><svg
+                    class="sm-logo" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path
+                      d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                  </svg>facebook</a></li>
+              <li><a class="dropdown-item" target="_blank" href="https://www.instagram.com/sidharth__vats/"><svg
+                    class="sm-logo" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                  </svg>instagram</a></li>
+              <li><a class="dropdown-item" target="_blank"
+                  href="https://www.linkedin.com/in/sidharth-vats-40a237172/"><svg class="sm-logo"
+                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                  </svg>linkedIn</a></li>
+
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container-fluid" id="coverlogo">
+    <div class="row" id="logorow">
+      <div class="col-12" id="logocont">
+        <center>
+          <svg id="logo" width="172" height="30" viewBox="0 0 172 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11.676 27.668C10.02 27.668 8.532 27.38 7.212 26.804C5.916 26.204 4.896 25.388 4.152 24.356C3.408 23.3 3.024 22.088 3 20.72H6.492C6.612 21.896 7.092 22.892 7.932 23.708C8.796 24.5 10.044 24.896 11.676 24.896C13.236 24.896 14.46 24.512 15.348 23.744C16.26 22.952 16.716 21.944 16.716 20.72C16.716 19.76 16.452 18.98 15.924 18.38C15.396 17.78 14.736 17.324 13.944 17.012C13.152 16.7 12.084 16.364 10.74 16.004C9.084 15.572 7.752 15.14 6.744 14.708C5.76 14.276 4.908 13.604 4.188 12.692C3.492 11.756 3.144 10.508 3.144 8.948C3.144 7.58 3.492 6.368 4.188 5.312C4.884 4.256 5.856 3.44 7.104 2.864C8.376 2.288 9.828 2 11.46 2C13.812 2 15.732 2.588 17.22 3.764C18.732 4.94 19.584 6.5 19.776 8.444H16.176C16.056 7.484 15.552 6.644 14.664 5.924C13.776 5.18 12.6 4.808 11.136 4.808C9.768 4.808 8.652 5.168 7.788 5.888C6.924 6.584 6.492 7.568 6.492 8.84C6.492 9.752 6.744 10.496 7.248 11.072C7.776 11.648 8.412 12.092 9.156 12.404C9.924 12.692 10.992 13.028 12.36 13.412C14.016 13.868 15.348 14.324 16.356 14.78C17.364 15.212 18.228 15.896 18.948 16.832C19.668 17.744 20.028 18.992 20.028 20.576C20.028 21.8 19.704 22.952 19.056 24.032C18.408 25.112 17.448 25.988 16.176 26.66C14.904 27.332 13.404 27.668 11.676 27.668Z"
+              stroke="white" stroke-width="4" />
+            <path d="M28.1249 2.324V27.416H24.8489V2.324H28.1249Z" stroke="white" stroke-width="4" />
+            <path
+              d="M41.5203 2.324C44.2563 2.324 46.6203 2.84 48.6123 3.872C50.6283 4.88 52.1643 6.332 53.2203 8.228C54.3003 10.124 54.8403 12.356 54.8403 14.924C54.8403 17.492 54.3003 19.724 53.2203 21.62C52.1643 23.492 50.6283 24.932 48.6123 25.94C46.6203 26.924 44.2563 27.416 41.5203 27.416H33.7083V2.324H41.5203ZM41.5203 24.716C44.7603 24.716 47.2323 23.864 48.9363 22.16C50.6403 20.432 51.4923 18.02 51.4923 14.924C51.4923 11.804 50.6283 9.368 48.9003 7.616C47.1963 5.864 44.7363 4.988 41.5203 4.988H36.9843V24.716H41.5203Z"
+              stroke="white" stroke-width="4" />
+            <path
+              d="M78.4934 2.324V27.416H75.2174V16.04H62.4374V27.416H59.1614V2.324H62.4374V13.34H75.2174V2.324H78.4934Z"
+              stroke="white" stroke-width="4" />
+            <path
+              d="M98.9192 21.836H87.9752L85.9592 27.416H82.5032L91.5752 2.468H95.3552L104.391 27.416H100.935L98.9192 21.836ZM97.9832 19.172L93.4472 6.5L88.9112 19.172H97.9832Z"
+              stroke="white" stroke-width="4" />
+            <path
+              d="M121.557 27.416L115.581 17.156H111.621V27.416H108.345V2.324H116.445C118.341 2.324 119.937 2.648 121.233 3.296C122.553 3.944 123.537 4.82 124.185 5.924C124.833 7.028 125.157 8.288 125.157 9.704C125.157 11.432 124.653 12.956 123.645 14.276C122.661 15.596 121.173 16.472 119.181 16.904L125.481 27.416H121.557ZM111.621 14.528H116.445C118.221 14.528 119.553 14.096 120.441 13.232C121.329 12.344 121.773 11.168 121.773 9.704C121.773 8.216 121.329 7.064 120.441 6.248C119.577 5.432 118.245 5.024 116.445 5.024H111.621V14.528Z"
+              stroke="white" stroke-width="4" />
+            <path d="M145.691 2.324V4.988H138.851V27.416H135.575V4.988H128.699V2.324H145.691Z" stroke="white"
+              stroke-width="4" />
+            <path d="M169.056 2.324V27.416H165.78V16.04H153V27.416H149.724V2.324H153V13.34H165.78V2.324H169.056Z"
+              stroke="white" stroke-width="4" />
+          </svg>
+
+          <svg id="logo2" width="121" height="30" viewBox="0 0 121 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M33.344 2.544L20.72 36H15.68L3.05603 2.544H7.71203L18.224 31.392L28.736 2.544H33.344Z"
+              stroke="white" stroke-width="4" />
+            <path
+              d="M57.9095 28.56H43.3175L40.6295 36H36.0215L48.1175 2.736H53.1575L65.2055 36H60.5975L57.9095 28.56ZM56.6615 25.008L50.6135 8.112L44.5655 25.008H56.6615Z"
+              stroke="white" stroke-width="4" />
+            <path d="M91.0693 2.544V6.096H81.9493V36H77.5813V6.096H68.4133V2.544H91.0693Z" stroke="white"
+              stroke-width="4" />
+            <path
+              d="M107.054 36.336C104.846 36.336 102.862 35.952 101.102 35.184C99.374 34.384 98.014 33.296 97.022 31.92C96.03 30.512 95.518 28.896 95.486 27.072H100.142C100.302 28.64 100.942 29.968 102.062 31.056C103.214 32.112 104.878 32.64 107.054 32.64C109.134 32.64 110.766 32.128 111.95 31.104C113.166 30.048 113.774 28.704 113.774 27.072C113.774 25.792 113.422 24.752 112.718 23.952C112.014 23.152 111.134 22.544 110.078 22.128C109.022 21.712 107.598 21.264 105.806 20.784C103.598 20.208 101.822 19.632 100.478 19.056C99.166 18.48 98.03 17.584 97.07 16.368C96.142 15.12 95.678 13.456 95.678 11.376C95.678 9.552 96.142 7.936 97.07 6.528C97.998 5.12 99.294 4.032 100.958 3.264C102.654 2.496 104.59 2.112 106.766 2.112C109.902 2.112 112.462 2.896 114.446 4.464C116.462 6.032 117.598 8.112 117.854 10.704H113.054C112.894 9.424 112.222 8.304 111.038 7.344C109.854 6.352 108.286 5.856 106.334 5.856C104.51 5.856 103.022 6.336 101.87 7.296C100.718 8.224 100.142 9.536 100.142 11.232C100.142 12.448 100.478 13.44 101.15 14.208C101.854 14.976 102.702 15.568 103.694 15.984C104.718 16.368 106.142 16.816 107.966 17.328C110.174 17.936 111.95 18.544 113.294 19.152C114.638 19.728 115.79 20.64 116.75 21.888C117.71 23.104 118.19 24.768 118.19 26.88C118.19 28.512 117.758 30.048 116.894 31.488C116.03 32.928 114.75 34.096 113.054 34.992C111.358 35.888 109.358 36.336 107.054 36.336Z"
+              stroke="white" stroke-width="4" />
+          </svg>
+        </center>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12" id="header-area">
+        <h2><span class="animate"></span></h2>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="container-fluid mt-4 mb-5 section-nav">
+    <div class="row "data-aos="zoom-in" data-aos-duration="200" data-aos-easing="ease-in-sine">
+      <div class="col-12 box">
+        <h2 id="about" class="section-heading"><i class="fas fa-info-circle heading-icon"></i>ABOUT</h2>
+        <h5 class="introHeading">My Introduction</h5>
+      </div>
+    </div>
+    <div class="row">
+      <div data-aos="zoom-in" data-aos-duration="3000" data-aos-easing="ease-in-sine" class="col-lg-5 offset-lg-1"
+        id="profile">
+        <img src="images/profile4.jpg" class="col-8 offset-2 " alt="" id="check">
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="3000" data-aos-easing="ease-in-sine" class="col-lg-5 offset-lg-1 mt-4"
+        id="para">
+        <div id="para-div">
+          <p class="p-2" id="paracont">
+            Hello World ! <br><br> I am Sidharth Vats, a Web Developer at Tata Consultancy Services.
+            I have keen interest in learning new technologies.
+            I work as a Full Stack Web Developer for one of the major Postal domain client of UK.
+            I'm Software Engineer with a demonstrated history of working in the information technology and services
+            industry. <br>
+            I thrive to become better with each new day and just want to ensure that I leave 'No Stone Unturned'
+            while following my passions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="skills" class="skillssection">
+
+    <div data-aos="zoom-in" data-aos-duration="200" data-aos-easing="ease-in-sine">
+      <h2 class="section-heading"><i class="fas fa-laptop-code heading-icon"></i>SKILLS</h2>
+      <h5 class="introHeading">My Technical Level</h5>
+    </div>
+
+    <div class="allskillslist justify-content-center offset-1 col-lg-10">
+      <div class="row container-lg mt-lg-4 ">
+        <div class="skillData bd-highlight col-lg-4 mt-4" data-aos-duration="600" data-aos="fade-down" data-aos-easing="ease-in-sine">
+          <div class="row">
+            <div class="col-6">
+              <i class="fab fa-html5 skillsIcon"></i>
+            </div>
+            <div class="col-4 offset-2">
+              <h3 class="skillName">HTML</h3>
+            </div>
+          </div>
+          <div class=" row skillBar">
+            <div class="skillPercentageHTML"></div>
+          </div>
+        </div>
+
+        <div class="skillData bd-highlight col-lg-4 offset-lg-4 mt-4" data-aos-duration="600" data-aos="fade-down" data-aos-easing="ease-in-sine">
+          <div class="row">
+            <div class="col-6">
+              <i class="fab fa-css3-alt skillsIcon"></i>
+            </div>
+            <div class="col-4 offset-2">
+              <h3 class="skillName">CSS</h3>
+            </div>
+          </div>
+          <div class=" row skillBar">
+            <div class="skillPercentageCSS"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row container mt-lg-4">
+        <div class="skillData bd-highlight col-lg-4 mt-4" data-aos-duration="600" data-aos="fade-down" data-aos-easing="ease-in-sine">
+          <div class="row">
+            <div class="col-2">
+              <i class="fab fa-js skillsIcon"></i>
+            </div>
+            <div class="col-8 offset-2">
+              <h3 class="skillName">JavaScript</h3>
+            </div>
+          </div>
+          <div class=" row skillBar">
+            <div class="skillPercentageJS"></div>
+          </div>
+        </div>
+
+        <div class="skillData bd-highlight col-lg-4 offset-lg-4 mt-4" data-aos-duration="600" data-aos="fade-down" data-aos-easing="ease-in-sine">
+          <div class="row">
+            <div class="col-2">
+              <i class="fab fa-microsoft skillsIcon"></i>
+            </div>
+            <div class="col-8 offset-2">
+              <h3 class="skillName">.NET Core</h3>
+            </div>
+          </div>
+          <div class=" row skillBar">
+            <div class="skillPercentageCsharp"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row container mt-lg-4">
+        <div class="skillData bd-highlight col-lg-4 mt-4" data-aos-duration="600" data-aos="fade-down" data-aos-easing="ease-in-sine">
+          <div class="row">
+            <div class="col-6">
+              <i class="fab fa-python skillsIcon"></i>
+            </div>
+            <div class="col-4 offset-2">
+              <h3 class="skillName">Python 3</h3>
+            </div>
+          </div>
+          <div class=" row skillBar">
+            <div class="skillPercentagePy"></div>
+          </div>
+        </div>
+
+        <div class="skillData bd-highlight col-lg-4 offset-lg-4 mt-4" data-aos-duration="600" data-aos="fade-down" data-aos-easing="ease-in-sine">
+          <div class="row">
+            <div class="col-2">
+              <i class="fab fa-git skillsIcon"></i>
+            </div>
+            <div class="col-8 offset-2">
+              <h3 class="skillName">Git & GitHub/VCS</h3>
+            </div>
+          </div>
+          <div class=" row skillBar">
+            <div class="skillPercentageGit"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row container mb-3 mt-lg-4">
+        <div class="skillData bd-highlight col-lg-4 mt-4" data-aos-duration="600" data-aos="fade-down" data-aos-easing="ease-in-sine">
+          <div class="row">
+            <div class="col-6">
+              <i class="fas fa-database skillsIcon"></i>
+            </div>
+            <div class="col-4 offset-2">
+              <h3 class="skillName">SQL</h3>
+            </div>
+          </div>
+          <div class=" row skillBar">
+            <div class="skillPercentageSQL"></div>
+          </div>
+        </div>
+
+        <div class="skillData bd-highlight col-lg-4 offset-lg-4 mt-4" data-aos-duration="600" data-aos="fade-down" data-aos-easing="ease-in-sine">
+          <div class="row">
+            <div class="col-2">
+              <i class="fas fa-cloud skillsIcon"></i>
+            </div>
+            <div class="col-8 offset-2">
+              <h3 class="skillName">Microsoft Azure</h3>
+            </div>
+          </div>
+          <div class=" row skillBar">
+            <div class="skillPercentageAZ"></div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+  <footer class="bg-dark text-center footer text-white mt-5">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+     
+      Designed & Developed By:
+      <h6 class="copyright">Sidharth Vats</h5>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="typed.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://kit.fontawesome.com/dd1a390272.js" crossorigin="anonymous"></script>
+  <script>
+    AOS.init();
+    function preloader() {
+      var preloader = document.getElementById('preloader-container');
+      preloader.style.display = 'none';
+    }
+    var typed = new Typed('.animate', {
+      strings: [
+        "Developer",
+        "Learner",
+        "Engineer"
+      ],
+
+      typeSpeed: 100,
+      backSpeed: 100,
+      loop: true
+    });
+  </script>
+
+
+</body>
+
+</html>
